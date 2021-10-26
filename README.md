@@ -69,10 +69,6 @@
   Follow Me on Social Media
 </p>
 <p align="center">
-<a href="https://instagram.com/_fauzanahmad_"><img src="https://cdn-icons-png.flaticon.com/128/2111/2111463.png" alt="Instagram"></a>
-<a href="https://github.com/fauzanahmad11"><img src="https://cdn-icons-png.flaticon.com/128/733/733553.png" alt="Github"></a>
-</p>
-
-<p>
-  <img width="500" src="https://github.com/fauzanahmad11/credit-union/blob/main/assets/img/ui/login.jpg"/>
+<a href="https://instagram.com/_fauzanahmad_" style="margin-right:30px;"><img width="70" src="https://cdn-icons-png.flaticon.com/128/2111/2111463.png" alt="Instagram"></a>
+<a href="https://github.com/fauzanahmad11"  style="margin-left:30px;"><img width="70" src="https://cdn-icons-png.flaticon.com/128/733/733553.png" alt="Github"></a>
 </p>
