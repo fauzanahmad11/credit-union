@@ -5,7 +5,7 @@
   seluruh datanya tersimpan di database dan dapat diakses darimana saja
 </p>
 
-# Fitur-fitur
+# Fitur
 <p>
   Pada aplikasi ini terdapat beberapa fitur diantaranya :
 </p>
