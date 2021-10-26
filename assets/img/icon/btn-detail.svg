@@ -1,0 +1,48 @@
+<svg id="btn-detail" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #6a53f8;
+      }
+
+      .cls-2 {
+        fill: #f7bd4b;
+      }
+
+      .cls-2, .cls-3 {
+        stroke: #fff;
+      }
+
+      .cls-3, .cls-5 {
+        fill: none;
+      }
+
+      .cls-3 {
+        stroke-width: 2px;
+      }
+
+      .cls-4 {
+        stroke: none;
+      }
+    </style>
+  </defs>
+  <circle id="Ellipse_21" data-name="Ellipse 21" class="cls-1" cx="12.5" cy="12.5" r="12.5"/>
+  <g id="icon-detail2" transform="translate(1.5 1.5)">
+    <g id="Ellipse_13" data-name="Ellipse 13" class="cls-2" transform="translate(5.78 9.5)">
+      <circle class="cls-4" cx="1.5" cy="1.5" r="1.5"/>
+      <circle class="cls-5" cx="1.5" cy="1.5" r="1"/>
+    </g>
+    <g id="Ellipse_14" data-name="Ellipse 14" class="cls-2" transform="translate(9.467 9.5)">
+      <circle class="cls-4" cx="1.5" cy="1.5" r="1.5"/>
+      <circle class="cls-5" cx="1.5" cy="1.5" r="1"/>
+    </g>
+    <g id="Ellipse_15" data-name="Ellipse 15" class="cls-2" transform="translate(13.154 9.5)">
+      <circle class="cls-4" cx="1.5" cy="1.5" r="1.5"/>
+      <circle class="cls-5" cx="1.5" cy="1.5" r="1"/>
+    </g>
+    <g id="Ellipse_12" data-name="Ellipse 12" class="cls-3">
+      <circle class="cls-4" cx="11" cy="11" r="11"/>
+      <circle class="cls-5" cx="11" cy="11" r="10"/>
+    </g>
+  </g>
+</svg>

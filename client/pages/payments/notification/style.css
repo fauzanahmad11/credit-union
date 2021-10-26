@@ -1,0 +1,194 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'robotoregular', Arial, Helvetica, sans-serif;
+}
+
+/* ==============================FONTS============================== */
+
+@font-face {
+    font-family: 'dancing_regular';
+    src: url(../../../../assets/fonts/dancingscript-variablefont_wght-webfont.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'robotoblack';
+    src: url(../../../../assets/fonts/Roboto-Black.ttf) format('ttf');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'robotomedium';
+    src: url(../../../../assets/fonts/roboto-medium-webfont.woff2) format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'robotoblack';
+    src: url(./../../../../assets/fonts/roboto-black-webfont.woff2) format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'robotobold';
+    src: url(../../../../assets/fonts/roboto-bold-webfont.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'robotobold_italic';
+    src: url(../../../../assets/fonts/roboto-bolditalic-webfont.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'robotolight';
+    src: url(../../../../assets/fonts/roboto-light-webfont.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'robotolight_italic';
+    src: url(../../../../assets/fonts/roboto-lightitalic-webfont.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'robotoregular';
+    src: url(../../../../assets/fonts/roboto-regular-webfont.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+.container {
+    width: 100%;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 0;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 5px;
+    font-family: 'dancing_regular', cursive;
+    font-size: 2em;
+    border-left: 2px solid var(--primaryTwo-text);
+    color: var(--primaryTwo-text);
+}
+
+.moto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primaryTwo-text);
+    font-weight: 550;
+    padding: 0 5px;
+}
+
+img {
+    width: 100%;
+}
+
+.brand .img-brand {
+    width: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 50px 0;
+    text-align: center;
+    color: var(--primaryTwo-text);
+}
+
+.content .icon-hero {
+    width: 350px;
+}
+
+.content .icon-hero.error {
+    width: 200px;
+}
+
+.content .icon-hero.unfinish {
+    width: 280px;
+}
+
+.content .text {
+    margin: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.content .text a {
+    display: block;
+    background-color: var(--primaryTwo-text);
+    width: 150px;
+    text-decoration: none;
+    color: var(--sidebar-bgcThree);
+    padding: 10px;
+    margin: 20px;
+    border-radius: 5px;
+    font-weight: 700;
+}
+
+.content .text a:hover {
+    box-shadow: inset 0 0 100px rgba(255, 255, 255, .1);
+}
+
+.content .text p {
+    font-size: .9em;
+    margin-top: 5px;
+}
+
+/* ======================COLOR====================== */
+:root {
+    /* Sidebar-BG */
+    --sidebar-bgc: #5D44F8;
+    --sidebar-bgcTwo: #564fcc;
+    --sidebar-bgcThree: #6c63ff;
+    /* Active-link Sidebar */
+    --sidebar-active: #4731D3;
+    /* Icon */
+    --icon-color: #F7BD4B;
+    /* Heading Content */
+    --heading-link-text: #6E58F8;
+    /* BG CONTENT */
+    --content-bgc: #F5F6F7;
+    /* primary text */
+    --primary-text: #2D3145;
+    --primaryTwo-text: #3f3d56;
+    /* secondary text */
+    --secondary-text: #6E717E;
+    /* icon-delete */
+    --btn-delete: #EF5350;
+}

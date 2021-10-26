@@ -1,0 +1,500 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'robotomedium';
+    src: url(./../fonts/roboto-medium-webfont.woff2) format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'robotobold';
+    src: url(../fonts/roboto-bold-webfont.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'dancing_regular';
+    src: url(../fonts/dancingscript-variablefont_wght-webfont.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'robotoregular';
+    src: url(../fonts/roboto-regular-webfont.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    background-color: #503e85;
+    justify-content: center;
+    text-align: right;
+}
+
+.firts-layer {
+    display: none;
+}
+
+.secound-layer {
+    background: url(../img/bg/layer1.svg) no-repeat;
+    /* width: 100%; */
+    height: 100vh;
+    background-size: cover;
+}
+
+.third-layer {
+    background: url(../img/bg/layer2.svg) no-repeat;
+    /* width: 100%; */
+    height: 100vh;
+    background-size: cover;
+}
+
+.fourd-layer {
+    background: url(../img/bg/layer3.svg) no-repeat;
+    /* width: 100%; */
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    padding-left: 120px;
+}
+
+.fourd-layer .logo-brand {
+    width: 350px;
+}
+
+.form-login {
+    width: 50%;
+    height: 100vh;
+    /* background-color: #fff; */
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.form-login .head .head-signup {
+    font-family: "dancing_regular";
+    color: var(--text-color);
+    font-size: 60px;
+    text-shadow: 0 0 5px var(--bg-active);
+    margin: 60px 0;
+
+}
+
+.form-login .body {
+    margin-top: 10px;
+}
+
+.form-login .form-group {
+    margin-bottom: 20px;
+}
+
+.form-login .form-group input[type="text"].form-control,
+.form-login .form-group input[type="password"].form-control {
+    width: 379px;
+    height: 50px;
+    border: 3px solid var(--border-color);
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    border-radius: 82px;
+    padding: 18px 20px;
+    font-family: "robotoregular";
+    font-size: 15px;
+    filter: drop-shadow(0 0px 5px rgba(0, 0, 0, .4));
+    transition: .2s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
+
+input[type="text"]:-webkit-autofill,
+input[type="text"]:-webkit-autofill:hover,
+input[type="text"]:-webkit-autofill:focus {
+    border: 3px solid var(--border-color);
+    -webkit-text-fill-color: var(--text-color);
+    box-shadow: inset 0 0 0px 1000px var(--bg-active);
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+.form-login .form-group input[type="text"].form-control::placeholder,
+.form-login .form-group input[type="password"].form-control::placeholder {
+    color: #392F57;
+}
+
+.form-login .form-group input[type="text"].form-control:focus,
+.form-login .form-group input[type="password"].form-control:focus {
+    background-color: var(--bg-active);
+    outline: none;
+}
+
+
+
+:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: red;
+}
+
+::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: red;
+}
+
+/* ===========Radio Button Style ================= */
+/* Pembungkus */
+.form-group .radio-control {
+    display: flex;
+    justify-content: center;
+    padding: 0 190px;
+    margin-top: 36px;
+}
+
+.form-group .radio-control .box {
+    display: inline-block;
+    position: relative;
+    padding-left: 25px;
+    cursor: pointer;
+    font-size: 15px;
+    font-family: "robotomedium";
+    color: var(--text-color);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* sembunyikan default radio button */
+.radio-control .btn-radio input[type="checkbox"] {
+    position: absolute;
+    background-color: blue;
+    opacity: 0;
+    cursor: pointer;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99999999999999999;
+}
+
+/* bikin radio button custom */
+.radio-control .btn-radio .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: var(--bg-color);
+    border-radius: 50%;
+    filter: drop-shadow(0 0 5px rgba(0, 0, 0, .6));
+    transition: all .3s ease-in-out;
+}
+
+/* ketika mouse hover berikan background grey */
+.radio-control .btn-radio:hover input[type="checkbox"]~.checkmark {
+    background-color: var(--bg-active);
+}
+
+/* ketika radio telah di tekan/checked add bg primary text */
+.radio-control .btn-radio input[type="checkbox"]:checked~.checkmark {
+    background-color: var(--border-color);
+}
+
+/* bikin indikator dot bulat tengah hidden when not clicked */
+.radio-control .btn-radio .checkmark::after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* tampilkan indikator ketika diclick */
+.radio-control .btn-radio input[type="checkbox"]:checked~.checkmark::after {
+    display: block;
+}
+
+/* berikan hiasan pada indikator */
+.radio-control .btn-radio .checkmark::after {
+    top: 4px;
+    left: 4px;
+    width: 12px;
+    height: 12px;
+    background: var(--bg-active);
+    border-radius: 50%;
+}
+
+/* =================style forgot akun================== */
+.forgot-pass .link-forgot {
+    display: flex;
+    color: var(--text-color);
+    font-family: "robotomedium";
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.forgot-pass .link-forgot .dot {
+    height: 20px;
+    width: 20px;
+    background-color: var(--bg-color);
+    position: relative;
+    border-radius: 50%;
+    border: 10px solid var(--border-color);
+    filter: drop-shadow(0 0 5px rgba(0, 0, 0, .6));
+    transition: all .3s ease-in-out;
+    margin-right: 8px;
+}
+
+.forgot-pass .link-forgot .dot::after {
+    content: "";
+    position: absolute;
+    top: -6px;
+    left: -6px;
+    width: 12px;
+    height: 12px;
+    background: var(--bg-active);
+    border-radius: 50%;
+}
+
+.radio-control .btn-radio,
+.forgot-pass .link-forgot {
+    transition: all .2s ease-in-out;
+}
+
+.radio-control .btn-radio:hover,
+.forgot-pass .link-forgot:hover {
+    color: var(--bg-active);
+}
+
+/* ======== footer login ================ */
+.form-login .footer {
+    margin-top: 46px;
+}
+
+.form-login .footer .btn-action button {
+    border: none;
+    padding: 9px 47px;
+    margin-bottom: 30px;
+    font-size: 20px;
+    font-family: "robotomedium";
+    color: var(--bg-active);
+    /* background-color: var(--bg-color); */
+    background-color: #503e85;
+    overflow: hidden;
+    transition: .5s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+    text-transform: uppercase;
+    position: relative;
+    /* border-radius: 30px; */
+    border: 3px solid transparent;
+}
+
+.form-login .footer .btn-action button.btn:focus {
+    outline: none;
+}
+
+.form-login .footer .btn-action button.active,
+.form-login .footer .btn-action button:hover {
+    background-color: var(--bg-active);
+    cursor: pointer;
+    color: var(--text-color);
+    /* box-shadow: 0 0 5px var(--bg-active),
+        0 0 25px var(--bg-active),
+        0 0 50px var(--bg-active),
+        0 0 100px var(--bg-active); */
+    border-radius: 82px;
+    border: 3px solid var(--border-color);
+    filter: drop-shadow(0 0 5px rgba(0, 0, 0, .6));
+
+}
+
+.form-login .footer .btn-action button span {
+    position: absolute;
+    display: block;
+}
+
+.form-login .footer .btn-action button span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    border-top-right-radius: 100px;
+    background: linear-gradient(90deg, transparent, var(--bg-active));
+    animation: animateTop 1s linear infinite;
+}
+
+@keyframes animateTop {
+    0% {
+        left: -100%;
+    }
+
+    50%,
+    100% {
+        left: 100%;
+    }
+}
+
+.form-login .footer .btn-action button span:nth-child(2) {
+    top: -100%;
+    right: 0%;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, var(--bg-active));
+    animation: animateRight 1s linear infinite;
+    animation-delay: 0.25s;
+}
+
+@keyframes animateRight {
+    0% {
+        top: -100%;
+    }
+
+    50%,
+    100% {
+        top: 100%;
+    }
+}
+
+.form-login .footer .btn-action button span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, var(--bg-active));
+    animation: animateBottom 1s linear infinite;
+    animation-delay: 0.5s;
+}
+
+@keyframes animateBottom {
+    0% {
+        right: -100%;
+    }
+
+    50%,
+    100% {
+        right: 100%;
+    }
+}
+
+.form-login .footer .btn-action button span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, var(--bg-active));
+    animation: animateLeft 1s linear infinite;
+    animation-delay: 0.75s;
+}
+
+@keyframes animateLeft {
+    0% {
+        bottom: -100%;
+    }
+
+    50%,
+    100% {
+        bottom: 100%;
+    }
+}
+
+/* box title */
+.form-login .footer .box-title .title {
+    font-family: "robotomedium";
+    color: var(--text-color);
+}
+
+.form-login .footer .box-title .title:hover {
+    color: var(--bg-active);
+}
+
+/* link singup */
+.form-login .footer .link-singup {
+    font-family: "robotomedium";
+    color: var(--bg-active);
+    text-decoration: none;
+}
+
+
+/* ==========================error box========================== */
+.error-box {
+    position: absolute;
+    z-index: 9999;
+    left: 35%;
+    right: 35%;
+    bottom: 0;
+    max-height: 0;
+    overflow: hidden;
+    filter: drop-shadow(0 2px 8px rgba(0, 0, 0, .5));
+    transition: all 2s ease-in-out;
+}
+
+.error-box .form-error {
+    filter: opacity(.7);
+    background-color: var(--bg-active);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 5px 30px;
+    overflow-x: scroll;
+}
+
+.form-error li {
+    color: var(--text-color);
+    font-family: "robotomedium";
+    font-size: 14px;
+}
+
+/* width */
+.form-error::-webkit-scrollbar {
+    height: 10px;
+}
+
+/* Track */
+.form-error::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px var(--sidebar-active);
+    border-radius: 10px;
+    position: relative;
+    background-color: rgb(158, 95, 194);
+    overflow: hidden;
+}
+
+/* Handle */
+.form-error::-webkit-scrollbar-thumb {
+    background: var(--border-color);
+    border-radius: 90px;
+}
+
+/* Handle on hover */
+.form-error::-webkit-scrollbar-thumb:hover {
+    background: rgb(83, 67, 136);
+}
+
+/* ==============color===================== */
+:root {
+    --border-color: #4B3B7F;
+    --bg-color: #57468B;
+    --text-color: #392F57;
+    --bg-active: #AC72CD;
+}
+
+@media (min-width: 1250px) {
+    .container {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 100vh;
+        background-color: #503e85;
+        justify-content: space-between;
+    }
+
+    .firts-layer {
+        background: url(../img/bg/layer0.svg) no-repeat;
+        width: 50%;
+        height: 100vh;
+        background-size: cover;
+        filter: drop-shadow(0 10px 10px rgba(0, 0, 0, 0.521));
+        display: block;
+    }
+}

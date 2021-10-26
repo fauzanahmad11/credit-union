@@ -1,0 +1,49 @@
+.overlay {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)),
+    url(hohenzollern-castle-3840x2160-germany-europe-forest-sky-4k-16630.jpg)
+      center / cover no-repeat;
+  height: 100vh;
+  filter: blur(1px);
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.content {
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.message {
+  color: #fff;
+}
+hr {
+  width: 40%;
+  background-color: #fff;
+  height: 2px;
+}
+.message .head * {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 3.7em;
+  letter-spacing: 0.03rem;
+  font-weight: bold;
+}
+.message .body p {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 2.3em;
+  font-weight: bold;
+}
+
+.provide {
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 426246;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 30px;
+}

@@ -1,0 +1,27 @@
+<svg id="icon-update2" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22">
+  <defs>
+    <style>
+      .cls-1, .cls-4 {
+        fill: none;
+      }
+
+      .cls-1 {
+        stroke: #fff;
+        stroke-width: 2px;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-3 {
+        stroke: none;
+      }
+    </style>
+  </defs>
+  <g id="Ellipse_12" data-name="Ellipse 12" class="cls-1">
+    <circle class="cls-3" cx="11" cy="11" r="11"/>
+    <circle class="cls-4" cx="11" cy="11" r="10"/>
+  </g>
+  <path id="Icon_material-update" data-name="Icon material-update" class="cls-2" d="M16.5,9.247h-4.52l1.827-1.88A4.693,4.693,0,0,0,7.221,7.3a4.584,4.584,0,0,0,0,6.527,4.68,4.68,0,0,0,6.587,0,4.342,4.342,0,0,0,1.36-3.26H16.5a6.228,6.228,0,0,1-1.76,4.194,6.036,6.036,0,0,1-8.481,0,5.894,5.894,0,0,1-.013-8.387,5.992,5.992,0,0,1,8.434,0L16.5,4.5ZM10.835,7.834v2.834l2.333,1.387-.48.807L9.835,11.167V7.834Z" transform="translate(0.498 0.5)"/>
+</svg>

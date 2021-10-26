@@ -1,0 +1,145 @@
+/* ==============================FONTS============================== */
+
+@font-face {
+    font-family: 'dancing_regular';
+    src: url(../fonts/dancingscript-variablefont_wght-webfont.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'robotoblack';
+    src: url(../fonts/Roboto-Black.ttf) format('ttf');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'robotomedium';
+    src: url(./../fonts/roboto-medium-webfont.woff2) format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'robotoblack';
+    src: url(./../fonts/roboto-black-webfont.woff2) format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'robotobold';
+    src: url(../fonts/roboto-bold-webfont.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'robotobold_italic';
+    src: url(../fonts/roboto-bolditalic-webfont.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'robotolight';
+    src: url(../fonts/roboto-light-webfont.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'robotolight_italic';
+    src: url(../fonts/roboto-lightitalic-webfont.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'robotoregular';
+    src: url(../fonts/roboto-regular-webfont.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+section.popup {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 9999;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: all 1s ease-in-out;
+}
+
+.popup .popup-success {
+    background-color: #fff;
+    border-radius: 10px;
+    text-align: center;
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, .7));
+    padding: 50px 40px;
+    overflow: auto;
+    max-width: 100%;
+    animation: popUpOut 1s ease-out .5s;
+    transform: scale(10000px);
+}
+
+@keyframes popUpOut {
+    0% {
+        padding: 0;
+        max-width: 0;
+        overflow: hidden;
+        /* filter: blur(5px); */
+        transform: scale(0);
+    }
+
+    100% {
+        padding: 50px 40px;
+        overflow: auto;
+        /* filter: blur(0); */
+        max-width: 100%;
+        transform: scale(1);
+    }
+}
+
+.popup .popup-success .body {
+    margin: 30px 0;
+}
+
+.popup .popup-success .body .title {
+    font-family: "robotobold";
+    color: #2D3145;
+}
+
+.popup .popup-success .body .small-title {
+    font-family: "robotolight";
+    color: rgb(147, 148, 153);
+    margin-top: 15px;
+}
+
+
+.popup .popup-success .foot a.btn {
+    width: 80px;
+    height: 24px;
+    display: inline-block;
+    background-color: purple;
+    border-radius: 4px;
+}
+
+.popup .popup-success .foot a.btn.btn-y-popup {
+    background-color: rgb(124, 106, 243);
+}
+
+.popup .popup-success .foot a.btn.btn-n-popup {
+    background-color: #AB9EFB;
+}
