@@ -1,6 +1,6 @@
 # credit-union
 <p>
-  ini adalah projek tugas akhir yang saya buat, pada aplikasi ini dibuat dengan tujuan mempermudah petugas dan anggota koperasi dengan membuat sistem pembayaran online dan juga
+  ini adalah projek tugas akhir yang saya buat menggunakan bahasa programming PHP (native), pada aplikasi ini dibuat dengan tujuan mempermudah petugas dan anggota koperasi dengan membuat sistem pembayaran online dan juga
   pengingat pembayaran angsuran. sistem ini juga bertujuan untuk menggantikan sistem manual yaitu pencatatan seluruh data didalam buku menjadi sistem yang
   seluruh datanya tersimpan di database dan dapat diakses darimana saja
 </p>
